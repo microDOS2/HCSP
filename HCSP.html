@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Briefing: Hydro-Combustion Supercritical Purifier (HCSP)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-title {
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #111827;
+        }
+        .memo-header dt {
+            font-weight: 600;
+            color: #374151;
+        }
+        .memo-header dd {
+            color: #4b5563;
+        }
+        .table-header {
+            background-color: #f3f4f6;
+            color: #374151;
+            font-weight: 600;
+        }
+        .table-row-odd {
+            background-color: #ffffff;
+        }
+        .table-row-even {
+            background-color: #f9fafb;
+        }
+        .diagram-box {
+            border: 1px solid #d1d5db;
+            background-color: #f9fafb;
+            box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+        }
+        .arrow {
+            position: relative;
+            color: #6b7280;
+        }
+        .arrow::after {
+            content: '→';
+            position: absolute;
+            font-size: 2rem;
+            line-height: 1;
+        }
+        /* SVG Styles */
+        .svg-text-main {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            fill: #1f2937;
+            text-anchor: middle;
+        }
+        .svg-text-sub {
+            font-family: 'Inter', sans-serif;
+            font-size: 11px;
+            fill: #4b5563;
+            text-anchor: middle;
+        }
+        .svg-label {
+            font-size: 12px;
+            font-weight: 500;
+            fill: #374151;
+            text-anchor: middle;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto max-w-5xl p-4 sm:p-8 my-8 sm:my-12 bg-white shadow-lg rounded-lg">
+
+        <!-- Header Section -->
+        <header class="mb-8 border-b pb-6">
+            <h1 class="text-3xl font-bold text-gray-900 mb-2">Technical Briefing Memo</h1>
+            <p class="text-lg text-gray-600">Hydro-Combustion Supercritical Purifier (HCSP) for Indoor Agriculture</p>
+        </header>
+
+        <!-- Memo Info -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 mb-8 text-sm memo-header">
+            <dl>
+                <dt>TO:</dt>
+                <dd>State Water Resources Control Board</dd>
+            </dl>
+            <dl>
+                <dt>FROM:</dt>
+                <dd>Advanced Water Systems Engineering</dd>
+            </dl>
+            <dl>
+                <dt>DATE:</dt>
+                <dd>August 10, 2025</dd>
+            </dl>
+            <dl>
+                <dt>SUBJECT:</dt>
+                <dd>Technical Briefing on the Hydro-Combustion Supercritical Purifier (HCSP)</dd>
+            </dl>
+        </div>
+
+        <!-- Section 1.0: Executive Summary -->
+        <section id="summary" class="mb-10">
+            <h2 class="section-title">1.0 Executive Summary</h2>
+            <p class="text-base leading-relaxed">
+                This document provides a technical overview of the Hydro-Combustion Supercritical Purifier (HCSP), a modular, closed-loop water treatment system. It is specifically designed to treat wastewater streams from indoor agriculture, such as nutrient-rich runoff and intermittent cleaning-in-place (CIP) waste. The system utilizes a process of electrolysis and clean hydrogen combustion to power Supercritical Water Oxidation (SCWO). This technology transforms complex wastewater into two manageable outputs: <strong>distilled-quality water</strong> suitable for reuse or compliant discharge, and a small volume of <strong>contained, inert solid sludge</strong>. The process requires no chemical additives and produces no stack pollutants like NOx, as the primary emission is water vapor. This technology offers a robust and reliable method for indoor farms to close their water loop, significantly reducing freshwater intake and ensuring a clean discharge.
+            </p>
+        </section>
+
+        <!-- Section 2.0: Process Description -->
+        <section id="process" class="mb-10">
+            <h2 class="section-title">2.0 Process Description</h2>
+            <p class="mb-8 text-base leading-relaxed">
+                The HCSP operates on a continuous, four-stage cycle that is fully automated and controlled. The diagram below illustrates the core process flow.
+            </p>
+
+            <!-- Four-Stage Process Diagram -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center mb-12">
+                <!-- Stage 1 -->
+                <div class="flex flex-col items-center">
+                    <div class="diagram-box rounded-lg p-4 w-full h-full flex flex-col justify-center items-center">
+                        <svg class="w-12 h-12 text-blue-500 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <h3 class="font-semibold text-lg">1. Electrolysis</h3>
+                        <p class="text-sm text-gray-600">Pure water is split into H₂ and O₂ gas using electricity.</p>
+                    </div>
+                </div>
+                <!-- Arrow -->
+                <div class="hidden md:flex items-center justify-center arrow"></div>
+                <!-- Stage 2 -->
+                <div class="flex flex-col items-center md:col-start-2">
+                     <div class="diagram-box rounded-lg p-4 w-full h-full flex flex-col justify-center items-center">
+                        <svg class="w-12 h-12 text-red-500 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7.014A8.003 8.003 0 0117.657 18.657z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1014.12 11.88l-4.242 4.242z"></path></svg>
+                        <h3 class="font-semibold text-lg">2. Combustion</h3>
+                        <p class="text-sm text-gray-600">H₂ and O₂ are ignited, producing intense, clean heat.</p>
+                    </div>
+                </div>
+                <!-- Arrow -->
+                <div class="hidden md:flex items-center justify-center arrow"></div>
+                <!-- Stage 3 -->
+                <div class="flex flex-col items-center md:col-start-3">
+                     <div class="diagram-box rounded-lg p-4 w-full h-full flex flex-col justify-center items-center">
+                        <svg class="w-12 h-12 text-yellow-500 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h3 class="font-semibold text-lg">3. SCWO</h3>
+                        <p class="text-sm text-gray-600">Heat creates supercritical water, destroying contaminants.</p>
+                    </div>
+                </div>
+                <!-- Arrow -->
+                <div class="hidden md:flex items-center justify-center arrow"></div>
+                <!-- Stage 4 -->
+                <div class="flex flex-col items-center md:col-start-4">
+                     <div class="diagram-box rounded-lg p-4 w-full h-full flex flex-col justify-center items-center">
+                        <svg class="w-12 h-12 text-green-500 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 2l4 9h10L21 2M3 2v4l4 9m0-9v4m10-4v4M7 11h10M7 11a4 4 0 01-4-4V2"></path></svg>
+                        <h3 class="font-semibold text-lg">4. Separation</h3>
+                        <p class="text-sm text-gray-600">Pure water is condensed; solids are collected as sludge.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- System Flow Diagram -->
+            <h3 class="text-xl font-semibold mb-4 text-gray-700">System Flow Diagram</h3>
+            <div class="w-full overflow-x-auto bg-white p-4 rounded-lg border border-gray-200 shadow-md">
+                <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <marker id="arrowhead-water" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#0ea5e9"/></marker>
+                        <marker id="arrowhead-heat" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#f97316"/></marker>
+                        <marker id="arrowhead-gas" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#8b5cf6"/></marker>
+                        <marker id="arrowhead-power" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#facc15"/></marker>
+                    </defs>
+
+                    <!-- Boxes -->
+                    <g id="box-influent">
+                        <rect x="50" y="50" width="160" height="70" rx="8" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="1.5"/>
+                        <path d="M122 75 C 132 75, 132 95, 142 95 S 152 75, 162 75" stroke="#0ea5e9" stroke-width="1.5" fill="none"/>
+                        <text x="130" y="110" class="svg-text-main">Influent Wastewater</text>
+                    </g>
+                    <g id="box-pump">
+                        <rect x="50" y="265" width="160" height="70" rx="8" fill="#f3f4f6" stroke="#6b7280" stroke-width="1.5"/>
+                        <circle cx="130" cy="300" r="20" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+                        <path d="M130 280 L 130 320 M110 300 L 150 300" stroke="#6b7280" stroke-width="1.5"/>
+                        <text x="130" y="325" class="svg-text-sub">(High-Pressure)</text>
+                        <text x="130" y="290" class="svg-text-main">Pump</text>
+                    </g>
+                    <g id="box-reactor">
+                        <rect x="320" y="220" width="160" height="160" rx="8" fill="#fefce8" stroke="#eab308" stroke-width="2"/>
+                        <text x="400" y="290" class="svg-text-main">Supercritical</text>
+                        <text x="400" y="310" class="svg-text-main">Reactor</text>
+                        <text x="400" y="330" class="svg-text-sub">(SCWO)</text>
+                    </g>
+                    <g id="box-separator">
+                        <rect x="590" y="50" width="160" height="70" rx="8" fill="#f3f4f6" stroke="#6b7280" stroke-width="1.5"/>
+                        <path d="M620 85 L 720 85" stroke="#9ca3af" stroke-width="1" stroke-dasharray="3"/>
+                        <text x="670" y="75" class="svg-text-main">Separator</text>
+                        <text x="670" y="110" class="svg-text-sub">(Condenser)</text>
+                    </g>
+                    <g id="box-distilled">
+                        <rect x="590" y="265" width="160" height="70" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+                         <path d="M662 290 C 672 290, 672 310, 682 310 S 692 290, 702 290" stroke="#22c55e" stroke-width="1.5" fill="none"/>
+                        <text x="670" y="325" class="svg-text-main">Distilled Water</text>
+                    </g>
+                     <g id="box-sludge">
+                        <rect x="590" y="480" width="160" height="70" rx="8" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5"/>
+                        <circle cx="670" cy="515" r="10" fill="#ef4444" opacity="0.5"/>
+                        <text x="670" y="535" class="svg-text-main">Inert Sludge</text>
+                    </g>
+                    <g id="box-electrolyzer">
+                        <rect x="320" y="50" width="160" height="70" rx="8" fill="#e0e7ff" stroke="#4f46e5" stroke-width="1.5"/>
+                        <text x="370" y="75" class="svg-text-main">Electrolyzer</text>
+                        <path d="M420 75 l-5 -5 l10 0 l-5 5 l0 10 l5 -5 l-10 0 l5 5" fill="#4f46e5"/>
+                        <text x="400" y="110" class="svg-text-sub">(H₂ & O₂ Production)</text>
+                    </g>
+                    <g id="box-combustion">
+                        <rect x="320" y="480" width="160" height="70" rx="8" fill="#ffedd5" stroke="#f97316" stroke-width="1.5"/>
+                         <path d="M390 500 C 420 500 390 530 420 530 C 390 530 420 500 390 500" stroke="#f97316" fill="none" stroke-width="1.5"/>
+                        <text x="400" y="535" class="svg-text-main">Combustion</text>
+                    </g>
+
+                    <!-- Arrows -->
+                    <path d="M130 120 V 265" stroke="#0ea5e9" stroke-width="2" marker-end="url(#arrowhead-water)" fill="none"/>
+                    <path d="M210 300 H 320" stroke="#0ea5e9" stroke-width="2" marker-end="url(#arrowhead-water)" fill="none"/>
+                    <path d="M480 300 H 550 C 580 300, 580 85, 590 85" stroke="#0ea5e9" stroke-width="2" marker-end="url(#arrowhead-water)" fill="none"/>
+                    <path d="M670 120 V 265" stroke="#22c55e" stroke-width="2" marker-end="url(#arrowhead-water)" fill="none"/>
+                    <path d="M670 120 V 480" stroke="#ef4444" stroke-width="2" marker-end="url(#arrowhead-water)" fill="none"/>
+                    <path d="M590 300 H 520 C 490 300 490 85 480 85" stroke="#0ea5e9" stroke-width="2" marker-end="url(#arrowhead-water)" fill="none"/>
+                    <path d="M320 85 H 250 C 220 85 220 50 250 50 H 300" stroke="#facc15" stroke-width="2" marker-end="url(#arrowhead-power)" fill="none"/>
+                    <path d="M400 120 V 220" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrowhead-gas)" fill="none"/>
+                    <path d="M400 480 V 380" stroke="#f97316" stroke-width="2" marker-end="url(#arrowhead-heat)" fill="none"/>
+                    <path d="M480 100 C 520 150, 520 450, 480 500" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrowhead-gas)" fill="none"/>
+
+                    <!-- Labels -->
+                    <text x="160" y="250" class="svg-label">Wastewater</text>
+                    <text x="530" y="180" class="svg-label">Supercritical Fluid</text>
+                    <text x="520" y="70" class="svg-label">Recycle Loop</text>
+                    <text x="240" y="35" class="svg-label">Electrical Input</text>
+                    <text x="440" y="170" class="svg-label">H₂ + O₂</text>
+                    <text x="520" y="515" class="svg-label">H₂ + O₂</text>
+                    <text x="440" y="430" class="svg-label">Clean Heat</text>
+                </svg>
+                <p class="text-center text-sm text-gray-500 mt-2">Diagram illustrates the main water purification flow and the supporting energy & fuel loop.</p>
+            </div>
+
+        </section>
+
+        <!-- Section 3.0: System Specifications -->
+        <section id="specs" class="mb-10">
+            <h2 class="section-title">3.0 System Specifications (10 m³/day Module)</h2>
+            <p class="mb-6 text-base leading-relaxed">
+                The following specifications are typical for a standard HCSP skid-mounted module designed for an indoor agricultural facility.
+            </p>
+            <div class="overflow-x-auto rounded-lg border border-gray-200 shadow-sm">
+                <table class="min-w-full divide-y-2 divide-gray-200 text-sm">
+                    <thead class="table-header">
+                        <tr>
+                            <th class="whitespace-nowrap px-4 py-3 text-left">Parameter</th>
+                            <th class="whitespace-nowrap px-4 py-3 text-left">Value (Typical)</th>
+                            <th class="whitespace-nowrap px-4 py-3 text-left">Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="table-row-odd">
+                            <td class="whitespace-nowrap px-4 py-3 font-medium text-gray-900">Throughput Capacity</td>
+                            <td class="whitespace-nowrap px-4 py-3 text-gray-700">10 m³/day (~10,000 L/day)</td>
+                            <td class="whitespace-nowrap px-4 py-3 text-gray-700">Operates continuously or in scheduled batches.</td>
+                        </tr>
+                        <tr class="table-row-even">
+                            <td class="whitespace-nowrap px-4 py-3 font-medium text-gray-900">Core Technology</td>
+                            <td class="whitespace-nowrap px-4 py-3 text-gray-700">Supercritical Water Oxidation (SCWO)</td>
+                            <td class="whitespace-nowrap px-4 py-3 text-gray-700">Powered by internal hydrogen combustion.</td>
+                        </tr>
+                        <tr class="table-row-odd">
+                            <td class="whitespace-nowrap px-4 py-3 font-medium text-gray-900">Water Recovery</td>
+                            <td class="whitespace-nowrap px-4 py-3 text-gray-700">85–95% to distillate</td>
+                            <td class="whitespace-nowrap px-4 py-3 text-gray-700">Balance becomes sludge, dependent on feed concentration.</td>
+                        </tr>
+                        <tr class="table-row-even">
+                            <td class="whitespace-nowrap px-4 py-3 font-medium text-gray-900">Output Water Quality</td>
+                            <td class="whitespace-nowrap px-4 py-3 text-gray-700">Distilled water; <10 µS/cm conductivity</td>
+                            <td class="whitespace-nowrap px-4 py-3 text-gray-700">Can be remineralized for reuse or discharged.</td>
+                        </tr>
+                         <tr class="table-row-odd">
+                            <td class="whitespace-nowrap px-4 py-3 font-medium text-gray-900">Operating Conditions</td>
+                            <td class="whitespace-nowrap px-4 py-3 text-gray-700">380–420 °C; ~25 MPa (250 bar)</td>
+                            <td class="whitespace-nowrap px-4 py-3 text-gray-700">Well within the supercritical regime.</td>
+                        </tr>
+                        <tr class="table-row-even">
+                            <td class="whitespace-nowrap px-4 py-3 font-medium text-gray-900">Average Electrical Load</td>
+                            <td class="whitespace-nowrap px-4 py-3 text-gray-700">~75–95 kW</td>
+                            <td class="whitespace-nowrap px-4 py-3 text-gray-700">Includes electrolyzer and auxiliary equipment.</td>
+                        </tr>
+                        <tr class="table-row-odd">
+                            <td class="whitespace-nowrap px-4 py-3 font-medium text-gray-900">Daily H₂ Consumption</td>
+                            <td class="whitespace-nowrap px-4 py-3 text-gray-700">~30–40 kg/day</td>
+                            <td class="whitespace-nowrap px-4 py-3 text-gray-700">Generated and consumed on-demand from water.</td>
+                        </tr>
+                        <tr class="table-row-even">
+                            <td class="whitespace-nowrap px-4 py-3 font-medium text-gray-900">Physical Footprint</td>
+                            <td class="whitespace-nowrap px-4 py-3 text-gray-700">~8–10 m² floor area; ≤3 m height</td>
+                            <td class="whitespace-nowrap px-4 py-3 text-gray-700">Designed to fit in typical mechanical rooms.</td>
+                        </tr>
+                        <tr class="table-row-odd">
+                            <td class="whitespace-nowrap px-4 py-3 font-medium text-gray-900">Noise Level</td>
+                            <td class="whitespace-nowrap px-4 py-3 text-gray-700"><75 dBA at 1 meter</td>
+                            <td class="whitespace-nowrap px-4 py-3 text-gray-700">Contained within enclosed skids.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 4.0: Regulatory, Environmental, and Safety Profile -->
+        <section id="safety">
+            <h2 class="section-title">4.0 Regulatory, Environmental, and Safety Profile</h2>
+            <p class="mb-6 text-base leading-relaxed">
+                The HCSP is engineered for safe, unattended operation and to meet stringent regulatory standards.
+            </p>
+            <ul class="space-y-4 list-disc list-inside text-base">
+                <li><strong>Water Discharge:</strong> The primary output is distilled water, which can be verified online with conductivity and TOC proxy sensors. This water is suitable for reuse within the facility (e.g., fertigation make-up) or for compliant discharge.</li>
+                <li><strong>Waste Handling:</strong> All separated contaminants are contained as a stable, inert sludge in a collection chamber. This sludge is periodically removed via standard waste services in accordance with all local regulations.</li>
+                <li><strong>Air Emissions:</strong> The system requires no air permit for combustion byproducts. The sealed combustion of hydrogen and pure oxygen produces only water vapor, with negligible NOx formation. Excess oxygen is safely vented.</li>
+                <li><strong>Safety & Controls:</strong> The system is fully automated with a PLC/industrial controller and features redundant safety interlocks. This includes multi-sensor monitoring for temperature, pressure, and hydrogen detection, as well as pressure relief valves and an automatic safe shutdown protocol. The closed-loop hydrogen system produces fuel on demand, eliminating risks associated with bulk storage of combustible gases.</li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-12 pt-6 border-t text-center text-sm text-gray-500">
+            <p>&copy; 2025 Advanced Water Systems Engineering. All Rights Reserved.</p>
+            <p>Confidential Document for Regulatory Review</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
