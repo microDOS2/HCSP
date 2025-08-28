@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HCSP Investor Page — $5/bbl Benchmark (Expanded Text + Graphics)</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin:0; background:#f5f6fa; color:#333; line-height:1.6; }
+    header { background:#002b45; color:white; text-align:center; padding:20px; }
+    h1,h2,h3 { color:#002b45; }
+    .tabs { display:flex; justify-content:center; flex-wrap:wrap; gap:6px; margin:16px 0; }
+    .tab { background:#ddd; padding:10px 16px; border-radius:6px; cursor:pointer; user-select:none; }
+    .tab.active { background:#004466; color:white; }
+    .tab-content { display:none; max-width:1000px; margin:auto; background:white; border-radius:8px; padding:30px; box-shadow:0 2px 8px rgba(0,0,0,.12); }
+    p { margin-bottom:1em; }
+    table{ width:100%; border-collapse:collapse; margin:12px 0; }
+    th,td{ border:1px solid #e5e5e5; padding:8px 10px; text-align:left; }
+    th{ background:#f1f6fb; }
+    .svg-wrap{ background:#fbfdff; border:1px solid #e6eef6; border-radius:10px; padding:8px; margin:10px 0; }
+    img.map { max-width:100%; border:1px solid #ccc; border-radius:6px; margin:10px 0; }
+    a { color:#004466; text-decoration:underline; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>HCSP — Investor Economics at $5/bbl Benchmark</h1>
+  <p>On-site Hydro-Combustion Supercritical Purification (HCSP) at 1,000,000 bbl/day scale</p>
+</header>
+
+<div class="tabs" id="tabs" role="tablist" aria-label="HCSP Tabs">
+  <div class="tab" id="tab-Overview" role="tab" tabindex="0" aria-controls="Overview" data-target="Overview">Overview</div>
+  <div class="tab" id="tab-ROIIRR" role="tab" tabindex="0" aria-controls="ROIIRR" data-target="ROIIRR">ROI/IRR</div>
+  <div class="tab" id="tab-Purchase" role="tab" tabindex="0" aria-controls="Purchase" data-target="Purchase">Purchase</div>
+  <div class="tab" id="tab-Service" role="tab" tabindex="0" aria-controls="Service" data-target="Service">Service/Lease</div>
+  <div class="tab" id="tab-ProForma" role="tab" tabindex="0" aria-controls="ProForma" data-target="ProForma">Mini Pro Forma</div>
+  <div class="tab" id="tab-Market" role="tab" tabindex="0" aria-controls="Market" data-target="Market">Market</div>
+  <div class="tab" id="tab-Sources" role="tab" tabindex="0" aria-controls="Sources" data-target="Sources">Sources & Footnotes</div>
+</div>
+
+<section id="Overview" class="tab-content" role="tabpanel" aria-labelledby="tab-Overview" style="display:block">
+  <h2>Executive Overview</h2>
+  <p>The Hydro-Combustion Supercritical Purifier (HCSP) addresses the economics of produced water treatment by providing 97–99% water recovery at scale. At the $5/bbl benchmark, a 1M bbl/day unit displaces up to $1.825B annually in disposal costs. Unlike trucking and SWD, HCSP creates distilled-quality water ready for reuse, with minimal sludge and optional recovery of salts/metals. These recovered salts and metals can themselves be marketed, creating secondary income streams that enhance project economics and provide investors with downstream value opportunities.</p>
+  <table>
+    <tr><th>Method</th><th>Cost Bands ($/bbl)</th><th>Notes</th></tr>
+    <tr><td>Trucking + SWD</td><td>$2 / $4 / $6</td><td>Benchmark $5/bbl</td></tr>
+    <tr><td>On-site reuse</td><td>$2 / $4 / $6</td><td>Limited by brine tolerance</td></tr>
+    <tr><td>Chem/mech</td><td>$2 / $4 / $6</td><td>Solids removal only</td></tr>
+    <tr><td>Membranes</td><td>$2 / $4 / $6</td><td>Reject brine persists</td></tr>
+    <tr><td>Thermal MVR</td><td>$2 / $4 / $6</td><td>High energy use</td></tr>
+    <tr><td>ZLD/Crystallizer</td><td>$2 / $4 / $6</td><td>Expensive, complex</td></tr>
+    <tr><td><b>HCSP</b></td><td><b>$2 / $4 / $6</b></td><td>Avoids $5/bbl + freshwater credit</td></tr>
+  </table>
+</section>
+
+<section id="ROIIRR" class="tab-content" role="tabpanel" aria-labelledby="tab-ROIIRR">
+  <h2>ROI and IRR</h2>
+  <p>HCSP’s ROI profile is exceptional: payback occurs in under 12 months even with conservative assumptions. At 90% utilization, annual net savings exceed $1.31B. IRR calculations exceed 500% at 5 years and pass 1000% at 10 years, reflecting extraordinary capital efficiency. Importantly, ROI further benefits from potential revenues tied to the marketing of recovered salts and metals, which diversify and expand income streams beyond water treatment alone.</p>
+  <div class="svg-wrap">
+    <svg viewBox="0 0 920 330" xmlns="http://www.w3.org/2000/svg">
+      <text x="10" y="18" font-weight="700">Payback</text>
+      <polyline fill="none" stroke="#004466" stroke-width="2" points="20,140 120,70 220,40 320,25 420,20"/>
+      <text x="24" y="155">Year 0</text>
+      <text x="380" y="18">&lt;12 mo</text>
+      <text x="480" y="18" font-weight="700">IRR vs Utilization</text>
+      <rect x="500" y="70" width="55" height="120" fill="#0a8a0a"/>
+      <rect x="570" y="50" width="55" height="140" fill="#0a8a0a"/>
+      <rect x="640" y="30" width="55" height="160" fill="#0a8a0a"/>
+      <rect x="710" y="20" width="55" height="170" fill="#0a8a0a"/>
+      <text x="508" y="205">70%</text>
+      <text x="578" y="205">80%</text>
+      <text x="648" y="205">90%</text>
+      <text x="718" y="205">100%</text>
+      <text x="10" y="210" font-weight="700">NPV (10y)</text>
+      <rect x="30" y="240" width="90" height="60" fill="#2e86de"/>
+      <rect x="150" y="250" width="90" height="50" fill="#888"/>
+      <rect x="270" y="265" width="90" height="35" fill="#cc0000"/>
+      <text x="58" y="315">8%</text>
+      <text x="178" y="315">10%</text>
+      <text x="298" y="315">15%</text>
+    </svg>
+  </div>
+</section>
+
+<section id="Purchase" class="tab-content" role="tabpanel" aria-labelledby="tab-Purchase">
+  <h2>Purchase Model</h2>
+  <p>Ownership requires upfront CAPEX (~$12.5M: $10M build, $1.5M delivery, $1M install). Annual fixed OPEX totals $0.75M. Variable OPEX runs ~$1.50/bbl. Customers retain all avoided disposal and freshwater offset value, resulting in ~$1.31B annual net savings at 90% utilization. In addition, marketing of recovered salts and metals can yield further revenues, turning HCSP into both a cost-avoidance and a revenue-generating asset.</p>
+  <table>
+    <tr><th>Year</th><th>Item</th><th>Amount</th></tr>
+    <tr><td>0</td><td>CAPEX</td><td>−$12.5M</td></tr>
+    <tr><td>1–10</td><td>Avoided disposal</td><td>$1.6425B</td></tr>
+    <tr><td>1–10</td><td>Freshwater credit</td><td>$164.25M</td></tr>
+    <tr><td>1–10</td><td>Variable OPEX</td><td>$492.75M</td></tr>
+    <tr><td>1–10</td><td>Fixed OPEX</td><td>$0.75M</td></tr>
+    <tr><td>1–10</td><td><b>Net annual</b></td><td>~$1.31B + secondary revenues</td></tr>
+  </table>
+</section>
+
+<section id="Service" class="tab-content" role="tabpanel" aria-labelledby="tab-Service">
+  <h2>Service / Lease</h2>
+  <p>Service agreements avoid CAPEX, instead using ~$5.5M annual fees. Customers still net ~$1.308B annually after fees and OPEX. This model suits operators seeking capital-light strategies. Providers capture steady service revenue with IRR depending on utilization and contract term. Customers may also benefit from shared revenues if salts and metals recovery is integrated, aligning provider and customer incentives.</p>
+  <table>
+    <tr><th>Component</th><th>Value</th></tr>
+    <tr><td>Avoided disposal</td><td>$1.6425B</td></tr>
+    <tr><td>Freshwater credit</td><td>$164.25M</td></tr>
+    <tr><td>Variable OPEX</td><td>$492.75M</td></tr>
+    <tr><td>Service fee</td><td>$5.5M</td></tr>
+    <tr><td><b>Net annual</b></td><td>~$1.308B + potential shared revenues</td></tr>
+  </table>
+  <h3>Provider Model (Illustrative)</h3>
+  <table>
+    <tr><th>Item</th><th>Value</th></tr>
+    <tr><td>Build</td><td>$10M</td></tr>
+    <tr><td>Delivery</td><td>$1.5M</td></tr>
+    <tr><td>Install</td><td>$1M</td></tr>
+    <tr><td>Maint</td><td>$0.25M/yr</td></tr>
+    <tr><td>Field svc</td><td>$0.5M/yr</td></tr>
+    <tr><td>Fee revenue</td><td>$5.5M/yr</td></tr>
+  </table>
+</section>
+
+<section id="ProForma" class="tab-content" role="tabpanel" aria-labelledby="tab-ProForma">
+  <h2>Mini Pro Forma</h2>
+  <p>This pro forma summarizes how HCSP economics work at $5/bbl disposal benchmark and 90% utilization. In addition to avoided disposal costs and freshwater credits, operators may gain incremental revenues from marketing recovered salts and metals, which can strengthen IRR and reduce payback periods.</p>
+  <table>
+    <tr><th>Input</th><th>Value</th></tr>
+    <tr><td>Disposal price</td><td>$5/bbl</td></tr>
+    <tr><td>Utilization</td><td>90%</td></tr>
+    <tr><td>Variable OPEX</td><td>$1.50/bbl</td></tr>
+    <tr><td>Fixed OPEX</td><td>$0.75M/yr</td></tr>
+    <tr><td>Service fee</td><td>$5.5M/yr</td></tr>
+    <tr><td>Freshwater credit</td><td>$0.50/bbl</td></tr>
+  </table>
+  <table>
+    <tr><th>Output Metric</th><th>Purchase</th><th>Service</th></tr>
+    <tr><td>Annual barrels</td><td>~328.5M</td><td>~328.5M</td></tr>
+    <tr><td>Net annual</td><td>~$1.31B + secondary revenues</td><td>~$1.308B + potential shared revenues</td></tr>
+  </table>
+  <h3>Secondary Revenues from Salts & Metals Recovery</h3>
+  <p>Beyond cost avoidance, HCSP enables capture of salts and metals present in produced water. These materials can be marketed in industrial and specialty applications. Depending on feed composition and recovery efficiency, potential revenues may range from $0.10–$0.50 per barrel treated. At 328.5M bbl/year throughput, this equates to an additional $32.8M–$164.3M annually, enhancing IRR and shortening payback.</p>
+  <table>
+    <tr><th>Recovery Product</th><th>Revenue Potential ($/bbl)</th><th>Annualized Value</th></tr>
+    <tr><td>Salts (e.g., NaCl, CaCl<sub>2</sub>)</td><td>$0.05–$0.30</td><td>$16.4M–$98.6M</td></tr>
+    <tr><td>Metals (trace, specialty)</td><td>$0.05–$0.20</td><td>$16.4M–$65.7M</td></tr>
+    <tr><td><b>Total Potential</b></td><td><b>$0.10–$0.50</b></td><td><b>$32.8M–$164.3M</b></td></tr>
+  </table>
+</section>
+
+<section id="Market" class="tab-content" role="tabpanel" aria-labelledby="tab-Market">
+  <h2>Market Context</h2>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/US_Oil_and_Gas_Basins_Map.png/800px-US_Oil_and_Gas_Basins_Map.png" alt="US Oil and Gas Basins" class="map"/>
+  <table>
+    <tr><th>Basin</th><th>Produced Water (bbl/day)</th><th>1%</th><th>3%</th><th>5%</th></tr>
+    <tr><td>Permian</td><td>12M</td><td>0.12</td><td>0.36</td><td>0.60</td></tr>
+    <tr><td>Eagle Ford</td><td>3M</td><td>0.03</td><td>0.09</td><td>0.15</td></tr>
+    <tr><td>Bakken</td><td>1.5M</td><td>0.02</td><td>0.05</td><td>0.08</td></tr>
+    <tr><td>Marcellus/Utica</td><td>2M</td><td>0.02</td><td>0.06</td><td>0.10</td></tr>
+  </table>
+</section>
+
+<section id="Sources" class="tab-content" role="tabpanel" aria-labelledby="tab-Sources">
+  <h2>Sources & Footnotes</h2>
+  <ul>
+    <li><a href="https://netl.doe.gov/" target="_blank">NETL (National Energy Technology Laboratory)</a> – Produced Water Management Economics</li>
+    <li><a href="https://www.epa.gov/uic" target="_blank">US EPA – Underground Injection Control Program</a></li>
+    <li><a href="https://www.eia.gov/" target="_blank">EIA – US Oil & Gas Production Data</a></li>
+    <li><a href="https://www.saltworkstech.com/" target="_blank">Saltworks Technologies</a> – Desalination and Water Treatment Benchmarks</li>
+    <li><a href="https://www.hartenergy.com/" target="_blank">Hart Energy</a>, <a href="https://www.reuters.com/" target="_blank">Reuters</a> – Market and regulatory updates on disposal wells</li>
+  </ul>
+</section>
+
+<script>
+(function(){
+  function setAria(tab, panel){
+    document.querySelectorAll('.tab').forEach(function(t){ t.setAttribute('aria-selected','false'); t.classList.remove('active'); });
+    document.querySelectorAll('.tab-content').forEach(function(p){ p.style.display = 'none'; });
+    if(tab){ tab.setAttribute('aria-selected','true'); tab.classList.add('active'); }
+    if(panel){ panel.style.display = 'block'; }
+  }
+  function openTab(tabEl, id){
+    try{
+      var panel = document.getElementById(id);
+      if(panel){ setAria(tabEl, panel); }
+    }catch(_){}
+  }
+  function attach(){
+    var tabs = document.querySelectorAll('.tab');
+    tabs.forEach(function(tab){
+      tab.addEventListener('click', function(){ openTab(tab, tab.getAttribute('data-target')); });
+      tab.addEventListener('keydown', function(e){ if(e.key==='Enter' || e.key===' '){ e.preventDefault(); openTab(tab, tab.getAttribute('data-target')); }});
+    });
+    var overview = document.querySelector('.tab[data-target="Overview"]');
+    if(overview){ openTab(overview, 'Overview'); }
+  }
+  // Optional smoke tests (no console output; exposes flag if run)
+  function smoke(){
+    try{
+      var ids = Array.from(document.querySelectorAll('.tab')).map(function(t){ return t.getAttribute('data-target'); });
+      var ok = ids.every(function(id){ return !!document.getElementById(id); });
+      window.__hcspTestResult__ = { tabs: ids.length, ok: ok };
+    }catch(_){ window.__hcspTestResult__ = { ok:false }; }
+  }
+  document.addEventListener('DOMContentLoaded', function(){ attach(); smoke(); });
+})();
+</script>
+</body>
+</html>
