@@ -19,6 +19,7 @@
     .svg-wrap{ background:#fbfdff; border:1px solid #e6eef6; border-radius:10px; padding:8px; margin:10px 0; }
     img.map { max-width:100%; border:1px solid #ccc; border-radius:6px; margin:10px 0; }
     a { color:#004466; text-decoration:underline; }
+      .img-frame { max-width:100%; border:1px solid #ccc; border-radius:6px; margin:10px 0; display:block; }
   </style>
 </head>
 <body>
@@ -50,6 +51,10 @@
     <tr><td>ZLD/Crystallizer</td><td>$2 / $4 / $6</td><td>Expensive, complex</td></tr>
     <tr><td><b>HCSP</b></td><td><b>$2 / $4 / $6</b></td><td>Avoids $5/bbl + freshwater credit</td></tr>
   </table>
+  <figure class="svg-wrap">
+    <img class="img-frame" src="https://microdos2.github.io/HCSP/assets%20/current%20process.jpg" alt="HCSP current process overview" loading="lazy" onerror="this.style.opacity='0.2';this.alt='Image not available';" />
+    <figcaption>Current Process (placeholder)</figcaption>
+  </figure>
 </section>
 
 <section id="ROIIRR" class="tab-content" role="tabpanel" aria-labelledby="tab-ROIIRR">
@@ -147,7 +152,7 @@
 
 <section id="Market" class="tab-content" role="tabpanel" aria-labelledby="tab-Market">
   <h2>Market Context</h2>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/US_Oil_and_Gas_Basins_Map.png/800px-US_Oil_and_Gas_Basins_Map.png" alt="US Oil and Gas Basins" class="map"/>
+  <img src="https://microdos2.github.io/HCSP/assets/map.jpg" alt="US Oil and Gas Basins" class="map"/>
   <table>
     <tr><th>Basin</th><th>Produced Water (bbl/day)</th><th>1%</th><th>3%</th><th>5%</th></tr>
     <tr><td>Permian</td><td>12M</td><td>0.12</td><td>0.36</td><td>0.60</td></tr>
